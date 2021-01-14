@@ -34,7 +34,7 @@ export const AppHeader: React.FC<any> = () => {
                     <Typography variant="h6" className={classes.title}>
                         NullPointerException - Engineering Q&A Platform
                     </Typography>
-                    <Button color="inherit">Login</Button>
+                    <Button color="inherit">Ask a question</Button>
                 </Toolbar>
             </AppBar>
         </div>
