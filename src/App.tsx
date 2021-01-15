@@ -8,17 +8,17 @@ import {Box} from "@material-ui/core";
 function App() {
     return (
         <Box>
-            <Switch>
-                <BaseLayout>
+            <BaseLayout>
+                <Switch>
                     <Route exact path="/"><SearchPage/></Route>
-                    <Route path="/:searchString">
-                        <SearchPage/>
-                    </Route>
-                    <Route path="/discussion"><DiscussionPage/></Route>
+                    <Route path="/discussion/:id"><DiscussionPage/></Route>
                     <Route path="/ask"><DiscussionPage/></Route>
                     <Route path="/answer"><DiscussionPage/></Route>
-                </BaseLayout>
-            </Switch>
+                    <Route path="/search/:searchString">
+                        <SearchPage/>
+                    </Route>
+                </Switch>
+            </BaseLayout>
         </Box>
     );
 }

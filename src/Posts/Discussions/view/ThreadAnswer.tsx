@@ -1,9 +1,8 @@
 import React from "react";
-import {Box, Button, Card, CardActions, CardContent, Divider, Typography} from "@material-ui/core";
+import {Box, Button, Card, CardActions, CardContent, createStyles, Divider, Typography} from "@material-ui/core";
 import {makeStyles} from "@material-ui/core/styles";
-import { Link } from 'react-router-dom'
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => createStyles({
     root: {
         minWidth: 275,
     },
@@ -22,16 +21,13 @@ const useStyles = makeStyles({
         marginRight: '80%'
     },
     container: {
-        padding: '10px'
+        paddingLeft: '50px',
+        paddingTop: '10px',
+        paddingBottom: '10px',
     }
-});
+}));
 
-interface SearchItemProps {
-    id: string
-    title: string
-}
-
-export const SearchItem: React.FC<SearchItemProps> = ({ id, title }) => {
+export const ThreadAnswer: React.FC<any> = () => {
     const classes = useStyles();
     return (
         <Box className={classes.container}>
@@ -40,13 +36,13 @@ export const SearchItem: React.FC<SearchItemProps> = ({ id, title }) => {
                     <Typography className={classes.title} color="textSecondary" gutterBottom>
                         {new Date().toDateString()}, Dayem Siddiqui
                     </Typography>
-                    <Link to={`/discussion/${id}`}>
-                        <Typography variant="h5" component="h2">
-                            { title }
-                        </Typography>
-                    </Link>
                     <Typography className={classes.pos} color="textSecondary">
                         24 Votes
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                        Hi I added the translations on the POEditor however even after 30 minutes the translations are
+                        not
+                        showing up on the frontend.
                     </Typography>
                 </CardContent>
                 <Divider/>
