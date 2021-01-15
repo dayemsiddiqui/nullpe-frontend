@@ -4,6 +4,7 @@ import {DiscussionPage} from "./Posts/Discussions";
 import {BaseLayout} from "./AppBase";
 import {SearchPage} from "./Posts/Search/view/SearchPage";
 import {Box} from "@material-ui/core";
+import {AskQuestionPage} from "./Posts/Questions";
 
 function App() {
     return (
@@ -12,7 +13,7 @@ function App() {
                 <Switch>
                     <Route exact path="/"><SearchPage/></Route>
                     <Route path="/discussion/:id"><DiscussionPage/></Route>
-                    <Route path="/ask"><DiscussionPage/></Route>
+                    <Route path="/ask"><AskQuestionPage /></Route>
                     <Route path="/answer"><DiscussionPage/></Route>
                     <Route path="/search/:searchString">
                         <SearchPage/>
