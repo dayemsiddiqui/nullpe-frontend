@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa7b9168-6dfa-49d0-8f74-ced56b85fa51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/deploy.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Questions/view/AskQuestionPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Questions/view/AskQuestionPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +46,7 @@
       <workItem from="1610641017773" duration="849000" />
       <workItem from="1610642347032" duration="2638000" />
       <workItem from="1610658674583" duration="6791000" />
-      <workItem from="1611089905284" duration="95000" />
+      <workItem from="1611089905284" duration="214000" />
     </task>
     <servers />
   </component>
