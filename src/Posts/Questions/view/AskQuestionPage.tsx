@@ -4,6 +4,7 @@ import 'react-quill/dist/quill.snow.css';
 import './quill.css';
 import {Box, Button, TextField} from "@material-ui/core";
 import {createStyles, makeStyles, Theme} from "@material-ui/core/styles";
+import {Link} from 'react-router-dom'
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -35,6 +36,9 @@ export const AskQuestionPage: React.FC<any> = () => {
         ],
     }
 
+    // @ts-ignore
+    const LinkToSearch = (props) => <Link to="/" {...props}/>
+
     return (
         <Box className={classes.container}>
             <TextField className={classes.padding} fullWidth id="outlined-basic" label="Question Title"
@@ -45,7 +49,7 @@ export const AskQuestionPage: React.FC<any> = () => {
                 value={value}
                 onChange={setValue}
                 modules={modules}/>
-            <Button variant="contained" color="primary">Post Question</Button>
+            <Button component={LinkToSearch} variant="contained" color="primary">Post Question</Button>
         </Box>
     );
 }
